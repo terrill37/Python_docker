@@ -1,5 +1,10 @@
+FROM ubuntu:latest
+FROM python:3
 
-From python:3
+RUN sudo apt-get update \
+    && sudo apt-get install -y \
+        nmap
+        vim
 
 ADD test.py .
 
